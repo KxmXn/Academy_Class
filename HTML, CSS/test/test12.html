@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul > li {   /* ul > li : ul tag 의 자식인 li   */
+      color:blue;
+      list-style-type: hangul;
+    }
+
+    #apple  {     /* #apple   : id="apple"   */
+      color : #FF0000; /* red */
+    }
+
+    .banana {
+      color: rgb(255, 255, 0); /* yellow; #FFFF00 */
+    }
+
+    #item1  { background-color: aqua;}
+    /* .item2  { background-color: coral;  } */
+    ul > .item2  { background-color: coral;  }
+
+  </style>
+</head>
+<body>
+  <h2>OrderedList, UnOrderedList</h2>
+  <ul type="circle"> <!-- disc, circle, square, none  -->
+    <li>사과</li>
+    <li id="item1">배</li>
+    <li class="banana">바나나</li>
+    <li class="item2">수박</li>
+  </ul>
+  <ol type="I">   <!-- 1, A, a, I, i -->
+    <li id="apple">사과</li>
+    <li >배</li>
+    <li class="banana">바나나</li>
+    <li class="item2">수박</li>
+  </ol>
+</body>
+</html>

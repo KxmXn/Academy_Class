@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background : #0bd;
+      color : #fff;
+      margin: 10px;
+      padding : 10px;
+    }   /* 1.여기까지 실행하면 3줄에 박스표시됨   */  
+
+    /* 2.이 후 추가해서 실행하면 1줄에 3개가 수평으로 표시됨 */ 
+    .container {
+       display: flex;   
+       align-items: center;
+       height: 100vh;     /* 필수 100vh 높이를 지정합니다 */
+       /* 실행후 화면크기를 왼쪽으로 줄여서 항목이 아래로 내려가는지 확인인
+        stretch（초깃값）  부모 요소의 높이 또는 콘텐츠의 가장 많은 자식 요소의 높이에 맞춰 늘어납니다.
+        flex-start         부모 요소의 윗부분에 맞춰 배치합니다.
+        flex-end           부모 요소의 아랫부분에 맞춰 배치합니다
+        center             중앙에 배치합니다.
+        baseline           베이스라인에 배치합니다
+       */       
+    }
+
+  </style>
+</head>
+<body>
+  <!--align-items 수직 방향 맞춤 -->
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+  </div>
+
+
+</body>
+</html>

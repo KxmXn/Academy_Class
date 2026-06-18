@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background: #0bd;
+      color : #fff;
+      padding : 10px;
+      width: 200px;
+      margin:10px;          
+
+      float:left;  /*  추가하면 한줄에 정렬됨  */
+    }
+
+    /* 다른항목을 추가하려면 필수수  */
+    .container::after  {
+      content : '';
+      display : block;
+      clear:both;
+    }
+  </style>
+</head>
+<body>
+  <!-- .container>.item*3>Item $ -->
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+  <!-- 아래에 추가할 요소   -->
+  <div style="background-color: silver;">test</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background : #0bd;
+      color : #fff; 
+      padding : 10px;
+    }   /* 1.여기까지 실행하면 6줄에 박스표시됨   */  
+
+    /* 2.이 후 추가해서 실행하면 6줄이 출력됨됨 */ 
+    .container {
+       display: grid;   
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 현재 상태에서는 그리드 아이템이 수직 정렬돼 있을 뿐입니다, 설정해도 변화없음-->
+  <!--  .container>.item*6>Item $ --> 
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>  
+
+
+</body>
+</html>

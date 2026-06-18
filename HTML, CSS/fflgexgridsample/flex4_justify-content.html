@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background : #0bd;
+      color : #fff;
+      margin: 10px;
+      padding : 10px;
+    }   /* 1.여기까지 실행하면 3줄에 박스표시됨   */  
+
+    /* 2.이 후 추가해서 실행하면 1줄에 3개가 수평으로 표시됨 */ 
+    .container {
+       display: flex;   
+       justify-content:  space-around;
+       /* 실행후 화면크기를 왼쪽으로 줄여서 항목이 아래로 내려가는지 확인인
+        flex-start（초깃값）  줄의 시작 지점에 배치합니다. 왼쪽 맞춤
+        flex-end              줄의 끝부분에 배치합니다. 오른쪽 맞춤
+        center                가운데 맞춤
+        space-between         왼쪽과 오른쪽 끝에 있는 요소를 끝에 붙이고, 남은 부분들은 균등한 공간을 형성한 상태로 배치합니다. 
+        space-around           왼쪽과 오른쪽 끝에 있는 공간도 포함해서 균등한 여백을 형성한 상태로 배치합니다.
+       */       
+    }
+
+  </style>
+</head>
+<body>
+  <!-- justify-content  수평 방향 맞춤 -->
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+  </div>
+
+
+</body>
+</html>

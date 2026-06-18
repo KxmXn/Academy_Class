@@ -1,0 +1,60 @@
+/* 공통스타일 */
+    * {
+       box-sizing: border-box;
+       margin: 0; padding: 0;
+    }
+    li { list-style-type: none; }
+
+    main {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    main {
+      display: grid;
+      grid-template-rows: 150px 400px 100px;
+      grid-template-columns: 20% 80%;
+    }
+
+    header {
+      grid-column: span 2;
+
+      background-color: #666;
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      line-height: 150px;
+    }
+
+    nav {
+      background: #ccc;
+      padding:30px 15px;
+    }
+
+    article {
+      padding : 30px 15px;
+      overflow : scroll;
+    }
+    
+    p:first-of-type {
+      font-family: "East Sea Dokdo", sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    footer {
+      grid-column: span 2;
+
+      background: #777;
+      color : white;
+      font-size:20px;
+      
+      /* 수직 정렬 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      /*padding: 30px;
+      text-align: center; */
+      /* line-height: 100px; 안됨*/ 
+    }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background : #0bd;
+      color : #fff;
+      margin: 10px;
+      padding : 10px;
+    }   /* 1.여기까지 실행하면 3줄에 박스표시됨   */  
+
+    /* 2.이 후 추가해서 실행하면 1줄에 3개가 수평으로 표시됨 */ 
+    .container {
+       display: flex;
+       /* 3. 자식 요소의 정렬 방향   */
+       flex-direction : column-reverse; 
+       /* 
+       row              왼쪽 -> 오른쪽 
+       row-reverse      왼쪽 <- 오른쪽 
+       column           위   -> 아래로 
+       column-reverse   위   <- 아래로 
+       */       
+    }
+
+  </style>
+</head>
+<body>
+  <!-- flexbox direction 자식 요소의 정렬 방향  -->
+  <!--  .container>.item*3>Item $ --> 
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>  
+
+
+</body>
+</html>

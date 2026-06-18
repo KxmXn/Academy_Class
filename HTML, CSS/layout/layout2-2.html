@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * { box-sizing: border-box;   }
+
+    header {
+      height: 150px;
+      background-color: #666;
+      color : white;
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+
+      line-height: 150px;
+    }
+
+    nav {
+      width: 20%; 
+      height: 300px;
+      background-color: #ccc;
+      padding:10px;
+      float:left;
+    }
+
+    section {
+      width : 80%;
+      height: 300px;
+      padding:10px;
+      float:right;
+      /* background-image: url('../images/gradient_bg.png'); 
+      background-repeat: repeat-x; */
+      background-image: url('../images/paper.gif');
+    }
+    
+    div::after {
+      content: '';
+      display: block;
+      clear : both;
+    }
+
+    footer {
+      /* clear: both; */
+      /* height: 100px; */
+      background: #777777;
+      color : white;
+      padding-top : 40px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+
+    button {
+      border-radius: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <header>Cities(div float)</header>
+    <div>
+    <nav>
+      <ul>
+        <li><a href="">London</a></li>
+        <li><a href="">Paris</a></li>
+        <li><a href="">Busan</a></li>
+      </ul>
+    </nav> 
+    <section>
+      <h3>London</h3>
+      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      <button>단추</button>
+    </section>
+    </div>
+    <footer>Footer</footer>
+  </main>
+</body>
+</html>

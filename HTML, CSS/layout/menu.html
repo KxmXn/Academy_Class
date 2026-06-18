@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  ul, li {
+    margin:0; padding:0;
+    list-style-type: none;
+  } 
+  li { 
+     width : 200px;      
+     background-color: #f44336;
+     text-align: center;
+     padding: 10px;
+  }
+  li > a { color:white; 
+     display: inline-block;
+     width:100%;
+  }
+  li:hover { background-color: red;  }
+
+  #menu1 > li { display: block;}
+  #menu2 > li { display: inline-block;}
+
+  div { margin: 20px;}
+  </style>
+</head>
+<body>
+  <div>
+    <ul id="menu1">
+      <li><a href="https://naver.com">Naver</a></li>
+      <li><a href="https://nate.com">Nate</a></li>
+      <li><a href="https://daum.net">Daum</a></li>
+    </ul>
+  </div>
+  <div>
+    <ul id="menu2">
+      <li><a href="https://naver.com">Naver</a></li>
+      <li><a href="https://nate.com">Nate</a></li>
+      <li><a href="https://daum.net">Daum</a></li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      background: royalblue;
+      color:gold;
+      padding : 20px;
+      text-align: center;
+    }
+
+  </style>
+  
+
+  <script>
+    function a() {
+        alert('메롱1!!');
+        alert('메롱2!!');
+        alert('메롱3!!')
+    } 
+    function b() {
+      /* const  div1El = document.getElementById('div1'); */
+      const  div1El = document.querySelector('body #div1');
+      div1El.innerHTML = '<h1>Hello</h1>';
+    }
+  </script>
+</head>
+<body>
+  <button onclick="alert('메롱!!')">눌러주세요</button><br>
+  <button onclick="alert('메롱1!!');alert('메롱2!!');alert('메롱3!!');">눌러주세요</button><br>
+  <button onclick="a()">눌러주세요</button><br>
+  <button onclick="b()">눌러주세요</button><br>
+  <div id="div1"></div>
+</body>
+</html>
+
+
+
+
+
+
+

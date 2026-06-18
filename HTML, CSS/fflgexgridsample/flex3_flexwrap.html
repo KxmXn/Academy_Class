@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background : #0bd;
+      color : #fff;
+      margin: 10px;
+      padding : 10px;
+    }   /* 1.여기까지 실행하면 3줄에 박스표시됨   */  
+
+    /* 2.이 후 추가해서 실행하면 1줄에 3개가 수평으로 표시됨 */ 
+    .container {
+       display: flex;   
+       flex-wrap: wrap-reverse;
+       /* 실행후 화면크기를 왼쪽으로 줄여서 항목이 아래로 내려가는지 확인인
+        nowrap（초깃값） 자식 요소를 줄바꿈 하지 않고, 한 줄로 배치합니다.  화면사이즈를 줄여도 항목이 아래로 내려가지 않음
+        wrap             자식 요소를 줄바꿈 합니다. 여러 줄이 되면 위에서 아래로 배치합니다. 화면사이즈를 줄이면 항목이 아래로 내려감
+        wrap-reverse     자식 요소를 줄바꿈 합니다. 여러 줄이 되면 아래에서 위로 배치합니다. 화면사이즈를 줄이면 항목이 아래로 내려가면서 거꾸로 배치됨
+       */       
+    }
+
+  </style>
+</head>
+<body>
+  <!-- flex-wrap 자식 요소를 줄바꿈 -->
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+    <div class="item">Item 7</div>
+    <div class="item">Item 8</div>
+  </div>
+
+
+</body>
+</html>

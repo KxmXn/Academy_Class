@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * { box-sizing: border-box; }
+    #main { width : 80%; margin:0 auto; } 
+    table, td {
+      border: 1px solid silver;
+      border-collapse: collapse;
+    }
+    table { width:100%;}
+    td:first-child { 
+      background-color: #333333;   
+      color : white;
+      text-align: center;
+      font-size: 10px;
+      width:20%;
+      padding: 10px;;
+    }  
+    td:last-child {
+      padding : 5px; /* 10px 5px; */ /* 5px 5px 5px 5px; */      ;
+    }
+    
+    .red    { color:red; }
+    td[colspan="2"] { background-color: white; }
+  </style>
+</head>
+<body>
+  <div id="main">
+   <h2>🛐기본정보</h2>
+   <form action="a.html" method="POST">
+   <table >
+    <tbody>
+      <tr>
+        <td><span class="red">*</span>이름</td>
+        <td><input type="text" name="name" /></td>
+      </tr>
+      <tr>
+        <td><span class="red">*</span>아이디</td>
+        <td>
+          <input type="text" name="id" />&nbsp;&nbsp;
+          <input type="button" value="✅아이디 중복확인"/><br>
+          💌 6~16자까지 영문자(소문자),숫자 사용가능합니다
+        </td>
+      </tr>
+      <tr>
+        <td><span class="red">*</span>비밀번호</td>
+        <td><input type="password" name="pwd" id="pwd1" /></td>
+      </tr>
+      <tr>
+        <td><span class="red">*</span>비밀번호 확인</td>
+        <td><input type="password" id="pwd2" /></td>
+      </tr>
+      <tr>
+        <td><span class="red">*</span>이메일</td>
+        <td>
+          <input type="text" name="email1" />@
+          <input type="text" name="email2" />
+          <select name="email3">
+            <option value="">메일주소선택</option>
+            <option value="naver.com">naver.com</option>
+            <option value="nate.com">nate.com</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>연락처</td>
+        <td>
+          휴대전화
+          <select name="phone1">
+            <option value="">선택</option>
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="016">016</option>
+            <option value="017">017</option>
+            <option value="018">018</option>
+            <option value="019">019</option>
+          </select>
+          - <input type="text" name="phone2"  style="width: 50px;"  maxlength="4"/>
+          - <input type="text" name="phone3"  style="width: 50px;" maxlength="4"/><br>
+          일반전화
+          <select name="tel1">
+            <option value="">선택</option>
+            <option value="02">서울</option>
+            <option value="051">부산</option>       
+          </select>
+          - <input type="text" name="tel2"  style="width: 50px;"  maxlength="4"/>
+          - <input type="text" name="tel3"  style="width: 50px;"  maxlength="4"/>
+        </td>
+      </tr>
+      <tr>
+        <td>우편번호</td>
+        <td>
+          <input type="text" name="zipcode" style="width: 160px;" /> 
+          <input type="button" value="➰ 주소찾기"  />
+        </td>
+      </tr>
+       <tr>
+        <td>주소</td>
+        <td>
+          <input type="text" name="addr1" style="width: 100%;" /><br> 
+          <input type="text" name="addr2" style="" /><br> 
+        </td>
+      </tr>
+
+      <tr>
+        <td>정보 수신 여부</td>
+        <td>
+          서비스및 이벤트 소식을 
+          <input type="checkbox" name="infoChkEmail" /> Email로 수신하겠습니다
+          <input type="checkbox" name="infoChkSMS" /> SMS로 수신하겠습니다
+        </td>
+      </tr>
+    </tbody>
+   </table> 
+ 
+   <h2>🛐작가정보</h2>
+    <table>
+      <tr>
+        <td>프로필이미지</td>
+        <td><input type="file" name="file" /> </td>
+      </tr>
+      <tr>
+        <td>필명</td>
+        <td><input type="text" name="nickname" /></td>
+      </tr>
+      <tr>
+        <td>대표작</td>
+        <td><input type="text" name="best" /></td>
+      </tr>
+      <tr>
+        <td>수상내역</td>
+        <td>
+          <textarea name="winner" style="height: 200px; width: 100%;"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>주요작품</td>
+        <td> 
+          <input type="text" name="title"     
+             placeholder="스토리의 제목을 입력하세요" />
+          <input type="text" name="titlerole" 
+             placeholder="해당 스토리의 역할을 입력하세요" />
+          <input type="button" value="삭제" /><br>
+          <input type="button" value="+ 추가" />
+
+        </td>
+      </tr>
+      <tr>
+        <td>작가정보공개설정</td>
+        <td>
+          <input type="radio" name="authorinfo" value="public" id="public" />
+          <label for="public">공개</label>
+          <input type="radio" name="authorinfo" value="private" id="private" />
+          <label for="private">비공개</label>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="저장" 
+          style="background-color:chocolate;color:white;width:70px;" />
+          <input type="reset" value="취소"  style="width: 70px;"/>
+        </td>        
+      </tr> 
+    </table>
+   
+   </form>
+   
+  </div>
+  <div  style="height: 300px;"></div>
+
+
+</body>
+</html>

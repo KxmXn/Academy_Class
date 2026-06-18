@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+  <title>Document</title>
+  <!--외부 스타일 external style 다른곳의 스타일을 가져와서 쓴다-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+  <style>
+    /* 공통스타일 */
+    * {
+       box-sizing: border-box;
+       margin: 0; padding: 0;
+    }
+    main {
+      width: 80%;
+      margin:0 auto;
+    }
+    ul, li {
+      list-style-type: none;
+    }
+    p {
+      margin:20px;
+    }
+    a {
+      text-decoration: none;
+      color : blue;
+     
+    }
+    a:hover {
+      background: cyan;
+    }
+
+    /*   header  */
+    header {
+      background-color: #666;
+      color: rgb(255, 255, 255);   
+      padding: 40px;
+      text-align: center;
+      font-size: 40px;
+
+      font-family: "East Sea Dokdo", sans-serif;
+    }
+
+    /* container  */
+    #container {
+      display: flex;
+    }
+
+    /*  nav */
+    nav {
+      flex : 2;
+
+      padding :20px;
+      background-color: #ccc;
+    }
+
+    /*
+       nav > ul   : nav 의 자식
+       nav   li   : nav 의 자손(자식+손자들)
+    */
+    /*nav > ul > li > a    { */
+    nav a {
+      display: block;
+      width : 250px;
+    }
+
+    /* section */
+    section {
+      flex : 8;
+      
+      padding: 20px;
+    }
+
+    /* 
+      section > p:first-child      -> 어떤 tag 의 첫번째 자식이 p 인 것을 찾아라
+      section  p:nth-of-type(1)    -> p 중에서 첫번째를 찾아라(1~)
+    */
+    section  p:nth-of-type(1)
+    {
+      font-weight: bold;
+      font-size : 30px;
+      font-family: "East Sea Dokdo", sans-serif;
+    }
+
+    /*footer */
+    footer {
+      background-color: #777;
+      color: rgb(255, 255, 255);
+      padding: 30px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 700;   /* bold */
+
+      font-family: "East Sea Dokdo", sans-serif;
+    }
+    
+  </style>
+</head>
+<body>
+  <main>
+    <header>Cities</header>
+    <div id="container">
+    <nav>
+      <ul>
+        <li><a href="layout3.html">London</a></li>
+        <li><a href="layout3-2.html">Paris</a></li>
+        <li><a href="layout3-3.html">Seoul</a></li>
+      </ul>
+    </nav>
+    <section>
+      <p>Seoul</p>
+      <p>서울특별시는 대한민국 수도[21]로 최대 도시이다. 평양시, 경주시, 개성시, 공주시, 김해시, 부여군, 고령군, 함안군처럼 오랜 역사를 가진 대한민국의 고도 중 하나다. </p>
+      <p>국채를 모집하거나 예산외에 국가의 부담이 될 계약을 체결하려 할 때에는 정부는 미리 국회의 의결을 얻어야 한다. 학교교육 및 평생교육을 포함한 교육제도와 그 운영, 교육재정 및 교원의 지위에 관한 기본적인 사항은 법률로 정한다</p>
+    </section>
+    </div>
+    <footer>&copy; Hoon's Company Since 2020 <br>&#8361;5000 &yen;500</footer>
+  </main>
+</body>
+</html>
